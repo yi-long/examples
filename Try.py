@@ -21,6 +21,21 @@ try:
 except:
     pass'''
 #AsteriskTriangle.py
-a=eval(input())
+'''a=eval(input())
 for i in range(1,a+1,2):
     print('{:^{}}'.format('*'*i,a))
+'''
+i=0
+while i<3:
+    name=input()
+    password=input()
+    if name=='Kate' and password=='666666':
+        print('load')
+        break
+    else:
+        if i<2:
+            print('name or password error;try again')
+            i=i+1
+        else :
+            print('over 3')
+            break
